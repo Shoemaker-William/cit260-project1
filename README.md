@@ -1,4 +1,2 @@
-CIT260Examples
-==============
-
-Example projects for CIT 260
+cit260-project1
+===============
