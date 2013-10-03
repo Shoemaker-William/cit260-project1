@@ -7,7 +7,7 @@ package cit260.project1;
 /**
  *
  * @author William
- * THIS IS A TEST
+ * 
  */
 public class Cit260Project1 {
 
