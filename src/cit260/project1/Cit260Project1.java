@@ -40,6 +40,16 @@ public class Cit260Project1 {
         System.out.println("\nWelcome " + this.name + "\n");
         System.out.println(this.instructions);
     }
+
+    private static class Marker {
+
+        public Marker() {
+        }
+
+        private void displayCharacter() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    }
     
     
     
