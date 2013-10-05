@@ -25,6 +25,10 @@ public class Cit260Project1 {
         myGame.displayHelp();
         Marker player1Marker = new Marker();
         player1Marker.displayCharacter();
+        Board gameBoard = new Board();
+        gameBoard.displayRow();
+        Player player1 = new Player();
+        player1.displayName();
         // TODO code application logic here
     }
     
