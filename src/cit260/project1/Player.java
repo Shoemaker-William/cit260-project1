@@ -9,6 +9,10 @@ package cit260.project1;
  * @author Jonathan Davenport
  */
 public class Player {
-    String name;
-    String color;
+    private String name;
+    private String color;
+    
+        public void displayName() {
+        System.out.println(name);
+        }
 }
