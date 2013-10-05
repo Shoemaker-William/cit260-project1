@@ -36,8 +36,9 @@ public class Cit260Project1 {
 
         public Marker() {
         }
+        
         private void displayCharacter() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            throw new UnsupportedOperationException("\n\n\nWe are sorry, but this feature is not supported yet.\n\n"); //To change body of generated methods, choose Tools | Templates.
         }
     }
 }
