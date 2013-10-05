@@ -17,18 +17,19 @@ public class Cit260Project1 {
             + "player wins the game.";
     public static void main(String[] args) {
         Cit260Project1 myGame = new Cit260Project1();
-        myGame.getName();
         myGame.displayHelp();
+        myGame.getName();
         Marker player1Marker = new Marker();
         player1Marker.displayCharacter();
     }
     public void getName() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your name: ");
+        System.out.println("\nEnter your name, then press enter to get started: ");
         this.name = input.next();
     }
     public void displayHelp() {
-        System.out.println("\nWelcome " + this.name + "\n");
+        //System.out.println("\nWelcome" + this.name + "\n");
+        System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
     }
     private static class Marker {
