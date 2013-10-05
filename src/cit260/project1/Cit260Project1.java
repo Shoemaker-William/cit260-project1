@@ -37,13 +37,5 @@ public class Cit260Project1 {
         System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
     }
-    private static class Marker {
-
-        public Marker() {
-        }
-        
-        private void displayCharacter() {
-            throw new UnsupportedOperationException("\n\n\nWe are sorry, but this feature is not supported yet.\n\n"); //To change body of generated methods, choose Tools | Templates.
-        }
     }
-}
+    

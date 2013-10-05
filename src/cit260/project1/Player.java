@@ -9,7 +9,7 @@ package cit260.project1;
  * @author Jonathan Davenport
  */
 public class Player {
-    private String name;
+    private String name = "Bob";
     private String color;
     
         public void displayName() {
