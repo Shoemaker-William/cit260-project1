@@ -5,9 +5,9 @@ import java.util.Scanner;
  * @author Jonathan Davenport + William Shoemaker
  */
 public class Player {
-    private String name;
-    private String color;
-    int score;
+      private String name;
+      private String color;
+      int score;
         
     public void getName() {
       Scanner input = new Scanner(System.in);
@@ -15,16 +15,11 @@ public class Player {
       this.name = input.next();
   }
     public void displayName() {
-    System.out.println(name);
+      System.out.println(name);
   }
     
     public int getScore() {
         
-        
-        
-        
-        return score;
+      return score;
     }
-    
-    
 }
