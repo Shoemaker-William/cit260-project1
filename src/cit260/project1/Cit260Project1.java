@@ -25,7 +25,8 @@ public class Cit260Project1 {
         gameBoard.displayRow();
         Player player1 = new Player();
         player1.displayName();
-        // TODO code application logic here
+        Player player2 = new Player();
+        player2.displayName();
     }
     public void getName() {
         Scanner input = new Scanner(System.in);

@@ -1,7 +1,6 @@
 package cit260.project1;
 
 /**
- *
  * @author Jonathan Davenport + William Shoemaker
  */
 public class Player {
