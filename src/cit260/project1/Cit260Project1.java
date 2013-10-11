@@ -1,11 +1,7 @@
 package cit260.project1;
 
-import java.util.Scanner;
-
 /**
- *
  * @authors William + Jonathan
- * 
  */
 public class Cit260Project1 {
     
@@ -28,12 +24,11 @@ public class Cit260Project1 {
         System.out.println("\nNow for Player 2");
         Player player2 = new Player();
         player2.getName();
-    }
+   }
 
     
     public void displayHelp() {
         System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
-    }
-    }
-    
+ }
+}
