@@ -23,15 +23,14 @@ public class Cit260Project1 {
         Board gameBoard = new Board();
         gameBoard.displayRow();
         Player player1 = new Player();
+        System.out.println("\nWe need to know who Player 1 is!");
         player1.getName();
-        //player1.displayName();
+        System.out.println("\nNow for Player 2");
         Player player2 = new Player();
         player2.getName();
-        //player2.displayName();
     }
 
     public void displayHelp() {
-        //System.out.println("\nWelcome" + this.name + "\n");
         System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
     }

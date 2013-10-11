@@ -10,7 +10,7 @@ public class Player {
         
     public void getName() {
       Scanner input = new Scanner(System.in);
-      System.out.println("\nEnter your name, then press enter to get started: ");
+      System.out.println("Type your name, then press enter to get started: ");
       this.name = input.next();
   }
     public void displayName() {
