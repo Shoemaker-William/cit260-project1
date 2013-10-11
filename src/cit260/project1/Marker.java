@@ -14,7 +14,7 @@ public class Marker {
     String color;
     
     public void displayCharacter() {
-        System.out.println(character);
+        
     }
     
     
