@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Player {
     private String name;
     private String color;
+    int score;
         
     public void getName() {
       Scanner input = new Scanner(System.in);
@@ -16,4 +17,14 @@ public class Player {
     public void displayName() {
     System.out.println(name);
   }
+    
+    public int getScore() {
+        
+        
+        
+        
+        return score;
+    }
+    
+    
 }
