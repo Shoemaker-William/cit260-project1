@@ -5,9 +5,11 @@ import java.util.Scanner;
  * @author Jonathan Davenport + William Shoemaker
  */
 public class Player {
-      private String name;
-      private String color;
+      public String name;
+      public String color;
       int score;
+      int wins;
+      int losses;
         
     public void getName() {
       Scanner input = new Scanner(System.in);
@@ -19,7 +21,8 @@ public class Player {
   }
     
     public int getScore() {
-        
+      score = wins - losses;
       return score;
     }
+    
 }

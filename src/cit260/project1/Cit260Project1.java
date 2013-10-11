@@ -23,6 +23,12 @@ public class Cit260Project1 {
         System.out.println("\nNow for Player 2");
         Player player2 = new Player();
         player2.getName();
+        
+        
+        
+        //at the end of a round, display current scores
+        System.out.println(player1.name + ", your score is " + player1.score + ". You have won " + player1.wins + "games.");
+        System.out.println(player2.name + ", your score is " + player2.score + ". You have won " + player2.wins + "games.");
    }
 
     
