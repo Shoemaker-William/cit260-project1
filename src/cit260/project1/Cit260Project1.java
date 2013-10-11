@@ -30,6 +30,7 @@ public class Cit260Project1 {
         player2.getName();
     }
 
+    
     public void displayHelp() {
         System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
