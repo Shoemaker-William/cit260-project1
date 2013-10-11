@@ -13,6 +13,6 @@ public class Board {
     int column = 7;
         
     public void displayRow() {
-        System.out.println(row);
+              
         }
 }
