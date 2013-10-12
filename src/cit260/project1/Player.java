@@ -24,5 +24,4 @@ public class Player {
       score = wins - losses;
       return score;
     }
-    
 }
