@@ -33,9 +33,13 @@ public class Cit260Project1 {
         System.out.println(player2.name + ", your score is " + player2.score + ". You have won " + player2.wins + " games.");
         System.out.println("\n\n");
         if (player1.score > player2.score) {
+            player1.score = player1.score + 1;
+            player2.score = player2.score - 1;
             System.out.println(player1 + " is the winner of this round! Great work!");
         }
         else if (player2.score > player1.score) {
+            player2.score = player2.score + 1;
+            player1.score = player1.score - 1;
             System.out.println(player2 + " is the winner of this round! Great work!");
         }
         else if (player1.score == player2.score) {
