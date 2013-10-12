@@ -35,11 +35,15 @@ public class Cit260Project1 {
         if (player1.score > player2.score) {
             player1.score = player1.score + 1;
             player2.score = player2.score - 1;
+            player1.wins = player1.wins + 1;
+            player2.losses = player2.losses - 1;
             System.out.println(player1 + " is the winner of this round! Great work!");
         }
         else if (player2.score > player1.score) {
             player2.score = player2.score + 1;
             player1.score = player1.score - 1;
+            player2.wins = player2.wins + 1;
+            player1.losses = player1.losses - 1;
             System.out.println(player2 + " is the winner of this round! Great work!");
         }
         else if (player1.score == player2.score) {
