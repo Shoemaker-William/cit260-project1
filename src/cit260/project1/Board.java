@@ -9,7 +9,7 @@ package cit260.project1;
  */
 public class Board {
     int row = 6;
-    int column = 7;
+    int column = 7;            
         
     public void displayRow() {
               
