@@ -25,7 +25,8 @@ public class Cit260Project1 {
         Player player2 = new Player();
         player2.getName();
         
-        
+        HelpMenuView help = new HelpMenuView();
+        help.displayHelpMenu();
         
         //at the end of a round, display current scores
         System.out.println("\n\n");
