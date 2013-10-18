@@ -25,8 +25,8 @@ public class Cit260Project1 {
         Player player2 = new Player();
         player2.getName();
         
-        HelpMenuView help = new HelpMenuView();
-        help.displayHelpMenu();
+        MainMenuView menu = new MainMenuView();
+        menu.displayMainMenu();
         
         //at the end of a round, display current scores
         System.out.println("\n\n");
@@ -58,33 +58,5 @@ public class Cit260Project1 {
         System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
  }
-    public void doGame(Player player1, Player player2) {
-       boolean win = false;
-       Player currentPlayer = player1;
-       while(win){
-           int turn = 1;
-           //There will be a function for the players to put their pieces in
-           //This is just to figure if they've won or not.
-           if(false){
-               //for horizontal
-               win = true;
-           }
-           else if(false){
-               //for vertical
-               win = true;
-           }
-           else if(false){
-               //for diagonal
-               win = true;
-           }
-           if(currentPlayer == player1){
-                currentPlayer = player2;
-           }
-           else{
-                currentPlayer = player1;
-           }
-           turn++;
-       }
-       
-    }
+
 }
