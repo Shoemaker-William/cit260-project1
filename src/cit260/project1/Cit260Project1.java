@@ -17,7 +17,7 @@ public class Cit260Project1 {
         Marker player1Marker = new Marker();
         player1Marker.displayCharacter();
         Board gameBoard = new Board();
-        gameBoard.displayRow();
+        gameBoard.displayBoard();
         Player player1 = new Player();
         System.out.println("\nWe need to know who Player 1 is!");
         player1.getName();
