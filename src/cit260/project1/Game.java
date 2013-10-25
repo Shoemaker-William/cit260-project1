@@ -53,7 +53,7 @@ public void doGame(Player player1, Player player2) {
         Scanner inFile = new Scanner(System.in);
         String column;
         boolean valid = false;
-        do {
+        while (!valid) {
 
             column = inFile.nextLine(); //gets input
             if ("1".equals(column) || "2".equals(column) || "3".equals(column)
@@ -65,7 +65,7 @@ public void doGame(Player player1, Player player2) {
                 continue;
             }
                 
-        } while (!valid);
+        }
         int columnInt = Integer.parseInt(column);
         return columnInt;
     }
