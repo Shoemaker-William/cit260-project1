@@ -42,19 +42,15 @@ public void doGame(Player player1, Player player2) {
            }
            turn++;
        }
-       
     }
-
     void doGame() {
         //As soon as we known how to pass parameters from different classes we will fix this.
     }
      public int getColumn() {
-
         Scanner inFile = new Scanner(System.in);
         String column = null;
         boolean valid = false;
         while (!valid) {
-
             column = inFile.nextLine(); //gets input
             if ("1".equals(column) || "2".equals(column) || "3".equals(column)
                     || "4".equals(column) || "5".equals(column) 
@@ -63,8 +59,7 @@ public void doGame(Player player1, Player player2) {
             else {
                 System.out.println("Invalid command. Please enter a valid command.");
                 continue;
-            }
-            
+            }            
         }
         int columnInt = Integer.parseInt(column);
         return columnInt;
