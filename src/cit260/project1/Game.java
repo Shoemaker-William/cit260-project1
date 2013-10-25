@@ -51,7 +51,7 @@ public void doGame(Player player1, Player player2) {
      public int getColumn() {
 
         Scanner inFile = new Scanner(System.in);
-        String column;
+        String column = null;
         boolean valid = false;
         while (!valid) {
 
@@ -64,7 +64,7 @@ public void doGame(Player player1, Player player2) {
                 System.out.println("Invalid command. Please enter a valid command.");
                 continue;
             }
-                
+            
         }
         int columnInt = Integer.parseInt(column);
         return columnInt;
