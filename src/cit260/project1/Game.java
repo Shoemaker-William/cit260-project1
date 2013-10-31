@@ -17,11 +17,13 @@ public void doGame(Player player1, Player player2) {
        Player currentPlayer = player1;
        int turn = 1;
        while(win){
+           Board gameBoard = new Board();
+           gameBoard.displayBoard();
            System.out.println("Please enter which column you'd like to place"
                    + "your piece:");
            int markerPlace = getColumn();
-           //There will be a function for the players to put their pieces in
-           //This is just to figure if they've won or not.
+           placeMarker(markerPlace, Board.allMarkers);
+           gameBoard.displayBoard();
            if(false){
                //for horizontal
                win = true;
@@ -63,5 +65,16 @@ public void doGame(Player player1, Player player2) {
         }
         int columnInt = Integer.parseInt(column);
         return columnInt;
+    }
+
+    private void placeMarker(int markerPlace, String[][] allMarkers) {
+        for (int i = Board.allMarkers.length; i > 0; i--){
+                  if("X".equals(Board.allMarkers[i][markerPlace])) {
+                      Board.allMarkers[i][markerPlace] = "O";
+                      //"O" should be changed to fit with whatever player placed the marker
+                      //This would be better if we could pass the current player in as well
+                      //This won't work until we can get the function doGame to work
+                  }
+        }
     }
 }
