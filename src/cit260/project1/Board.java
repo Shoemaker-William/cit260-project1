@@ -1,6 +1,5 @@
 package cit260.project1;
-/**
- * @author Jonathan Davenport + Will Shoemaker
+/* @author Jonathan Davenport + Will Shoemaker
  */
 public class Board {
     int row = 6;
