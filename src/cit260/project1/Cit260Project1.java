@@ -10,7 +10,7 @@ public class Cit260Project1 {
             + "in a row, either horizontal, vertical, or diagonal; that\n"
             + "player wins the game.";
     boolean winner;
-    
+
     public static void main(String[] args) {
         Cit260Project1 myGame = new Cit260Project1();
         myGame.displayHelp();

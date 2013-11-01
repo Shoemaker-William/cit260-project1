@@ -1,5 +1,4 @@
 package cit260.project1;
-
 import java.util.Scanner;
 /**
  * @author Jonathan + William
@@ -11,14 +10,12 @@ public class MainMenuView {
         +"Q  Quit Game\n";
     
 private MainMenuControl control = new MainMenuControl();
-    
-    public MainMenuView() {
+   public MainMenuView() {
     }
         public void displayMainMenu() {       
         String command;
         do {
             this.display();
-            
             // get command entered
             command = this.getCommand();
             switch (command) {
@@ -31,7 +28,6 @@ private MainMenuControl control = new MainMenuControl();
             }
         } while(!"Q".equals(command));  
     }
-
         // displays the main menu
     public final void display() {
         System.out.println("\n\t*********************************************************");
@@ -41,7 +37,6 @@ private MainMenuControl control = new MainMenuControl();
     }
 // retrieves the command entered by the end user
 protected final String getCommand() {
-
         Scanner inFile = new Scanner(System.in);
         String command;
         boolean valid = false;

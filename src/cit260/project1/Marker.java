@@ -5,9 +5,6 @@ package cit260.project1;
 public class Marker {
     String character = "0";
     String color;
-    public void displayCharacter() {
-        
-    }
-    
-    
+    public void displayCharacter() {   
+    }   
 }

@@ -1,30 +1,18 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package cit260.project1;
-
 import java.util.Scanner;
-
 /**
  * @author Jonathan + William
  */
 public class HelpMenuView {
-         
-   
     private final static String menuItems = 
         "B  The board\n"
         +"G  The Connect Four game\n"
         +"M  Markers\n"
         +"P  Players\n"        
         +"Q  Quit Help\n";
-    
     private HelpMenuControl control = new HelpMenuControl();
-    
     public HelpMenuView() {
-        
     } 
-    
     // display the help menu and get the end users input selection
     public void displayHelpMenu() {       
         String command;
