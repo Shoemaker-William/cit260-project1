@@ -1,16 +1,14 @@
 package cit260.project1;
-/**
+/*
  * @authors William + Jonathan
  */
 public class Cit260Project1 {
-    
     String instructions = "This is the game of Connect Four. It involves two\n"
             + "players. Each player takes a turn putting a marker in the\n"
             + "bottom empty space of a column. When a player gets four markers\n"
             + "in a row, either horizontal, vertical, or diagonal; that\n"
             + "player wins the game.";
     boolean winner;
-
     public static void main(String[] args) {
         Cit260Project1 myGame = new Cit260Project1();
         myGame.displayHelp();
@@ -24,10 +22,10 @@ public class Cit260Project1 {
         System.out.println("\nNow for Player 2");
         Player player2 = new Player();
         player2.getName();
-        
+
         MainMenuView menu = new MainMenuView();
         menu.displayMainMenu();
-        
+
         //at the end of a round, display current scores
         System.out.println("\n\n");
         System.out.println(player1.name + ", your score is " + player1.score + ". You have won " + player1.wins + " games.");
@@ -50,13 +48,9 @@ public class Cit260Project1 {
         else if (player1.score == player2.score) {
             System.out.println("It was a tie! You both win this round! Or lose...");
         }
-        
    }
-
-    
     public void displayHelp() {
         System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
  }
-
 }

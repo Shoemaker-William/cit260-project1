@@ -1,17 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package cit260.project1;
-
 import java.util.Scanner;
-
-/**
- *
+/*
  * @author Jonathan Davenport
  */
 public class Game {
-
 public void doGame(Player player1, Player player2) {
        boolean win = false;
        Player currentPlayer = player1;
