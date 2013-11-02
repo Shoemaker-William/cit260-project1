@@ -15,7 +15,7 @@ public class Board {
     };
 public void displayBoard() {
               for (int i = 0; i < Board.allMarkers.length; i++){
-                  for (int j = 0; j < Board.allMarkers.length; j++) {
+                  for (int j = 0; j < Board.allMarkers[i].length; j++) {
                       String currentMarker;
                       if ("X".equals(allMarkers[i][j])) {
                           currentMarker = " ";
