@@ -19,7 +19,6 @@ public void doGame(Player player1, Player player2) {
            placeMarker(markerPlace, Board.allMarkers);
            gameBoard.displayBoard();
            win = testHorizontal(Board.allMarkers);
-           
            if(!win){
                win = testVertical(Board.allMarkers);
            }
@@ -65,6 +64,7 @@ public void doGame(Player player1, Player player2) {
                       //"O" should be changed to fit with whatever player placed the marker
                       //This would be better if we could pass the current player in as well
                       //This won't work until we can get the function doGame to work
+                      //I've been looking into this tonight, but I can't figure out how to do it. -Will
             }
         }
     }
