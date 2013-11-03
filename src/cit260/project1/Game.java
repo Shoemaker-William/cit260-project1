@@ -1,13 +1,14 @@
 package cit260.project1;
 import java.util.Scanner;
 /*
- * @author Jonathan Davenport
+ * @author Jonathan Davenport + William Shoemaker
  */
 public class Game {
 public void doGame(Player player1, Player player2) {
        boolean win = false;
        Player currentPlayer = player1;
-       int turn = 0;
+       int turn;
+       turn = 0;
        while(win){
            turn++;
            Board gameBoard = new Board();
@@ -44,11 +45,11 @@ public void doGame(Player player1, Player player2) {
         boolean valid = false;
         while (!valid) {
             column = inFile.nextLine(); //gets input
-            if ("1".equals(column) || "2".equals(column) || "3".equals(column)
+                   if ("1".equals(column) || "2".equals(column) || "3".equals(column)
                     || "4".equals(column) || "5".equals(column) 
                     || "6".equals(column) || "7".equals(column))
                 valid = true;
-            else {
+        else {
                 System.out.println("Invalid command. Please enter a valid command.");
                 continue;
             }            
@@ -64,7 +65,7 @@ public void doGame(Player player1, Player player2) {
                       //"O" should be changed to fit with whatever player placed the marker
                       //This would be better if we could pass the current player in as well
                       //This won't work until we can get the function doGame to work
-                  }
+            }
         }
     }
     private boolean testHorizontal(String[][] allMarkers) {
@@ -76,7 +77,6 @@ public void doGame(Player player1, Player player2) {
                            allMarkers[i][j].equals(allMarkers[i][j+2]) &&
                             allMarkers[i][j].equals(allMarkers[i][j+3]))
                         return true;
-                    
                 }  
             }
         }
@@ -105,7 +105,6 @@ public void doGame(Player player1, Player player2) {
                            allMarkers[i][j].equals(allMarkers[i+2][j+2]) &&
                             allMarkers[i][j].equals(allMarkers[i+3][j+3]))
                         return true;
-                    
                 }  
             }
             for (int j = 6; j >= 3; j--) {
@@ -115,7 +114,6 @@ public void doGame(Player player1, Player player2) {
                            allMarkers[i][j].equals(allMarkers[i+2][j-2]) &&
                             allMarkers[i][j].equals(allMarkers[i+3][j-3]))
                         return true;
-                    
                 }  
             }
         }
