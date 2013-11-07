@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Player {
       public String name;
       public String color;
+      public String marker;
       int score;
       int wins;
       int losses;
