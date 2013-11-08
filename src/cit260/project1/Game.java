@@ -8,11 +8,11 @@ public void doGame() {
        Player player1 = new Player();
        System.out.println("\nWe need to know who Player 1 is!");
        player1.getName();
-       player1.marker = "1";
+       player1.marker = "x";
        System.out.println("\nNow for Player 2");
        Player player2 = new Player();
        player2.getName();
-       player2.marker = "2";
+       player2.marker = "o";
        Board gameBoard = new Board();
        boolean win = false;
        int turn = 0;
