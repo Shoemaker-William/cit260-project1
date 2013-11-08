@@ -26,7 +26,7 @@ public void doGame() {
                currentPlayer = player2;
            }
            gameBoard.displayBoard();
-           System.out.println("\nPlease enter which column you'd like to place"
+           System.out.println("\n" + currentPlayer.name + ", Please enter which column you'd like to place"
                    + " your piece:");
            int markerPlace = getColumn();
            placeMarker(markerPlace, Board.allMarkers, currentPlayer);

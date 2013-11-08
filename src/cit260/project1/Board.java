@@ -33,13 +33,13 @@ public void displayBoard() {
                   if (i < 6){
                       System.out.print("|\n");
                   }
-              }
+             }
         }
 public void clearBoard() {
     for (int i = 0; i < 6; i++){
          for (int j = 0; j < Board.allMarkers[i].length; j++) {
              allMarkers[i][j]= "X";
-         }
-    }
-}
+   }
+  }
+ }
 }
