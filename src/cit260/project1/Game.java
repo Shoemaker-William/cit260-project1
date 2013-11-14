@@ -43,8 +43,12 @@ public void doGame() {
            }
        }
        gameBoard.clearBoard();
-       displayScore(player1, player2);
-    }
+       
+       Player.displayScore(player1, player2);
+       //This should run the displayScore method that is not in the Player class. 
+      
+
+}
      public int getColumn() {
         Scanner inFile = new Scanner(System.in);
         String column = null;
@@ -125,28 +129,5 @@ public void doGame() {
             }
         }
         return false;
-    }
-public void displayScore(Player player1, Player player2) {
-    System.out.println("\n\n");
-        System.out.println(player1.name + ", your score is " + player1.score + ". You have won " + player1.wins + " games.");
-        System.out.println(player2.name + ", your score is " + player2.score + ". You have won " + player2.wins + " games.");
-        System.out.println("\n\n");
-        if (player1.score > player2.score) {
-            player1.score = player1.score + 1;
-            player2.score = player2.score - 1;
-            player1.wins = player1.wins + 1;
-            player2.losses = player2.losses - 1;
-            System.out.println(player1.name + " is the winner of this round! Great work!");
-        }
-        else if (player2.score > player1.score) {
-            player2.score = player2.score + 1;
-            player1.score = player1.score - 1;
-            player2.wins = player2.wins + 1;
-            player1.losses = player1.losses - 1;
-            System.out.println(player2.name + " is the winner of this round! Great work!");
-        }
-        else if (player1.score == player2.score) {
-            System.out.println("It was a tie! You both win this round! Or lose...");
-        }
     }
 }
