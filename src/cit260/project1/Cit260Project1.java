@@ -16,7 +16,7 @@ public class Cit260Project1 {
         MainMenuView menu = new MainMenuView();
         menu.displayMainMenu();
    }
-    public void displayHelp() {
+    private void displayHelp() {
         System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
  }

@@ -42,6 +42,7 @@ public void doGame() {
                currentPlayer.wins++;
            }
        }
+       gameBoard.displayBoard();
        gameBoard.clearBoard();
        
        Player.displayScore(player1, player2);
@@ -49,7 +50,7 @@ public void doGame() {
       
 
 }
-     public int getColumn() {
+     private int getColumn() {
         Scanner inFile = new Scanner(System.in);
         String column = null;
         boolean valid = false;

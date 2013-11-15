@@ -25,7 +25,7 @@ public class Player {
       return score;
     }
 
-public void displayScore(Player player1, Player player2) {
+public static void displayScore(Player player1, Player player2) {
     System.out.println("\n\n");
         System.out.println(player1.name + ", your score is " + player1.score + ". You have won " + player1.wins + " games.");
         System.out.println(player2.name + ", your score is " + player2.score + ". You have won " + player2.wins + " games.");
