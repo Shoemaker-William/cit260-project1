@@ -5,19 +5,19 @@ public class Board {
     int row = 6;
     int column = 7;
     public static String[][]allMarkers ={
-        {"X","X","X","X","X","X","X"},
-        {"X","X","X","X","X","X","X"},
-        {"X","X","X","X","X","X","X"},
-        {"X","X","X","X","X","X","X"},
-        {"X","X","X","X","X","X","X"},
-        {"X","X","X","X","X","X","X"},
+        {"_","_","_","_","_","_","_"},
+        {"_","_","_","_","_","_","_"},
+        {"_","_","_","_","_","_","_"},
+        {"_","_","_","_","_","_","_"},
+        {"_","_","_","_","_","_","_"},
+        {"_","_","_","_","_","_","_"},
         {"1","2","3","4","5","6","7"}
     };
 public void displayBoard() {
               for (int i = 0; i < Board.allMarkers.length; i++){
                   for (int j = 0; j < Board.allMarkers[i].length; j++) {
                       String currentMarker;
-                      if ("X".equals(allMarkers[i][j])) {
+                      if ("_".equals(allMarkers[i][j])) {
                           currentMarker = " ";
                       }
                       else {
@@ -38,7 +38,7 @@ public void displayBoard() {
 public void clearBoard() {
     for (int i = 0; i < 6; i++){
          for (int j = 0; j < Board.allMarkers[i].length; j++) {
-             allMarkers[i][j]= "X";
+             allMarkers[i][j]= "_";
    }
   }
  }

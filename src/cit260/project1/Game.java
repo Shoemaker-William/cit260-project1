@@ -8,11 +8,11 @@ public void doGame() {
        Player player1 = new Player();
        System.out.println("\nWe need to know who Player 1 is!");
        player1.getName();
-       player1.marker = "x";
+       player1.marker = "X";
        System.out.println("\nNow for Player 2");
        Player player2 = new Player();
        player2.getName();
-       player2.marker = "o";
+       player2.marker = "O";
        Board gameBoard = new Board();
        boolean win = false;
        int turn = 0;
@@ -27,14 +27,14 @@ public void doGame() {
            }
            gameBoard.displayBoard();
            System.out.println("\n" + currentPlayer.name + ", Please enter which column you'd like to place"
-                   + " your piece:");
+                   + " an " + currentPlayer.marker + ":");
            int markerPlace = getColumn();
            placeMarker(markerPlace, Board.allMarkers, currentPlayer);
            win = testHorizontal(Board.allMarkers);
            if(!win){
                win = testVertical(Board.allMarkers);
            }
-           else if(!win){
+           if(!win){
                win = testDiagonal(Board.allMarkers);
            }
            if(win) {
@@ -71,7 +71,7 @@ public void doGame() {
 
     private void placeMarker(int markerPlace, String[][] allMarkers, Player currentPlayer) {
         for (int i = 6; i >= 0; i--){
-                  if("X".equals(Board.allMarkers[i][markerPlace])) {
+                  if("_".equals(Board.allMarkers[i][markerPlace])) {
                       Board.allMarkers[i][markerPlace] = currentPlayer.marker;
                       return;
                       //"O" should be changed to fit with whatever player placed the marker
@@ -83,7 +83,7 @@ public void doGame() {
     private boolean testHorizontal(String[][] allMarkers) {
         for (int i = 6; i >= 0; i--) {
             for (int j = 0; j < 4; j++) {
-                if ("X".equals(allMarkers[i][j])) {}
+                if ("_".equals(allMarkers[i][j])) {}
                 else  {
                     if (allMarkers[i][j].equals(allMarkers[i][j+1]) && 
                            allMarkers[i][j].equals(allMarkers[i][j+2]) &&
@@ -97,7 +97,7 @@ public void doGame() {
     private boolean testVertical(String[][] allMarkers) {
         for (int i = 5; i >= 3; i--) {
             for (int j = 0; j <= 6; j++) {
-                if ("X".equals(allMarkers[i][j])) {}
+                if ("_".equals(allMarkers[i][j])) {}
                 else  {
                     if (allMarkers[i][j].equals(allMarkers[i-1][j]) && 
                         allMarkers[i][j].equals(allMarkers[i-2][j]) &&
@@ -108,25 +108,22 @@ public void doGame() {
         }
         return false;
     }
-    private boolean testDiagonal(String[][] allMarkers) {//This doesn't work yet
+    private boolean testDiagonal(String[][] allMarkers) {
         for (int i = 5; i >= 3; i--) {
-            for (int j = 0; j < 4; j++) {
-                if ("X".equals(allMarkers[i][j])) {}
-                else  {
-                    if (allMarkers[i][j].equals(allMarkers[i-1][j+1]) && 
+            for (int j = 0; j < 7; j++) {
+                if ("_".equals(allMarkers[i][j])) {}
+                else if(j <= 3)  {
+                    if(allMarkers[i][j].equals(allMarkers[i-1][j+1]) && 
                            allMarkers[i][j].equals(allMarkers[i-2][j+2]) &&
                             allMarkers[i][j].equals(allMarkers[i-3][j+3]))
                         return true;
                 }  
-            }
-            for (int j = 3; j < 7; j++) {
-                if ("X".equals(allMarkers[i][j])) {}
-                else  {
-                    if (allMarkers[i][j].equals(allMarkers[i-1][j-1]) && 
+                else if(j >= 3) {
+                    if(allMarkers[i][j].equals(allMarkers[i-1][j-1]) && 
                            allMarkers[i][j].equals(allMarkers[i-2][j-2]) &&
                             allMarkers[i][j].equals(allMarkers[i-3][j-3]))
                         return true;
-                }  
+                }
             }
         }
         return false;
