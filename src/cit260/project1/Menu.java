@@ -23,6 +23,6 @@ public abstract class Menu {
     
     public void display() {}
 
-    protected String getCommand() {}
+    protected String getCommand() {return null;}
 
 }
