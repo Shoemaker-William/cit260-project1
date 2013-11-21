@@ -14,7 +14,7 @@ public class Cit260Project1 {
         myGame.displayHelp();
 
         MainMenuView menu = new MainMenuView();
-        menu.displayMainMenu();
+        menu.displayMenu();
    }
     private void displayHelp() {
         System.out.println("\nWelcome to Connect Four!" + "\n");

@@ -8,7 +8,7 @@ public class MainMenuControl {
     }
     public void initiateHelp() {
             HelpMenuView help = new HelpMenuView();
-            help.displayHelpMenu();
+            help.displayMenu();
          }   
     public void startGame() {
             Game game = new Game();
