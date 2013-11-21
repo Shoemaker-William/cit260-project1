@@ -4,11 +4,10 @@ import java.util.Scanner;
  * @author Jonathan + William
  */
 public class MainMenuView extends Menu {
-    private final static String[][] menuItems = {
-        {"H", "See Help Menu"},
-        {"N",  "Start New Game"},
-        {"Q",  "Quit Game"}
-    };
+    private final static String menuItems = 
+        "H     See Help Menu\n"+
+        "N     Start New Game\n"+
+        "Q     Quit Game";
     
 private MainMenuControl control = new MainMenuControl();
    public MainMenuView() {

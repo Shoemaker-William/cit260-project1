@@ -4,13 +4,13 @@ import java.util.Scanner;
  * @author Jonathan + William
  */
 public class HelpMenuView extends Menu {
-    private final static String[][] menuItems = {
-        {"B", "The board"},
-        {"G",  "The Connect Four game"},
-        {"M",  "Markers"},
-        {"P",  "Players"},        
-        {"Q", "Quit Help"}
-    };
+    private final static String menuItems = 
+        "B     The board\n"+
+        "G     The Connect Four game\n"+
+        "M     Markers\n"+
+        "P     Players\n"+       
+        "Q     Quit Help";
+    
     private HelpMenuControl control = new HelpMenuControl();
     public HelpMenuView() {
         super(HelpMenuView.menuItems);
