@@ -3,16 +3,19 @@ import java.util.Scanner;
 /*
  * @author Jonathan + William
  */
-public class MainMenuView {
-    private final static String menuItems = 
-        "H  See Help Menu\n"
-        +"N  Start New Game\n"
-        +"Q  Quit Game\n";
+public class MainMenuView extends Menu {
+    private final static String[][] menuItems = {
+        {"H", "See Help Menu"},
+        {"N",  "Start New Game"},
+        {"Q",  "Quit Game"}
+    };
     
 private MainMenuControl control = new MainMenuControl();
    public MainMenuView() {
+       super(MainMenuView.menuItems);
     }
-        public void displayMainMenu() {       
+        @Override
+        public void displayMenu() {       
         String command;
         do {
             this.display();
@@ -29,6 +32,7 @@ private MainMenuControl control = new MainMenuControl();
         } while(!"Q".equals(command));  
     }
         // displays the main menu
+    @Override    
     public final void display() {
         System.out.println("\n\t*********************************************************");
         System.out.println("\tPlease choose what you would like to do:");
@@ -36,7 +40,8 @@ private MainMenuControl control = new MainMenuControl();
         System.out.println("\t*********************************************************\n");
     }
 // retrieves the command entered by the end user
-protected final String getCommand() {
+    @Override
+    public String getCommand() {
         Scanner inFile = new Scanner(System.in);
         String command;
         boolean valid = false;

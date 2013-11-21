@@ -3,18 +3,21 @@ import java.util.Scanner;
 /**
  * @author Jonathan + William
  */
-public class HelpMenuView {
-    private final static String menuItems = 
-        "B  The board\n"
-        +"G  The Connect Four game\n"
-        +"M  Markers\n"
-        +"P  Players\n"        
-        +"Q  Quit Help\n";
+public class HelpMenuView extends Menu {
+    private final static String[][] menuItems = {
+        {"B", "The board"},
+        {"G",  "The Connect Four game"},
+        {"M",  "Markers"},
+        {"P",  "Players"},        
+        {"Q", "Quit Help"}
+    };
     private HelpMenuControl control = new HelpMenuControl();
     public HelpMenuView() {
+        super(HelpMenuView.menuItems);
     } 
     // display the help menu and get the end users input selection
-    public void displayHelpMenu() {       
+    @Override
+    public void displayMenu() {       
         String command;
         do {
             this.display();
@@ -39,6 +42,7 @@ public class HelpMenuView {
     }
 
         // displays the help menu
+    @Override
     public final void display() {
         System.out.println("\n\t*********************************************************");
         System.out.println("\tPlease enter the letter for the topic that you "
@@ -53,6 +57,7 @@ public class HelpMenuView {
     
     
     // retrieves the command entered by the end user
+    @Override
     protected final String getCommand() {
 
         Scanner inFile = new Scanner(System.in);
