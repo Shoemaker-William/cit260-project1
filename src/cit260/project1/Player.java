@@ -1,6 +1,6 @@
 package cit260.project1;
 import java.util.Scanner;
-/**
+/*
  * @author Jonathan Davenport + William Shoemaker
  */
 public class Player {

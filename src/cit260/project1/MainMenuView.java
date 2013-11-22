@@ -4,14 +4,14 @@ import java.util.Scanner;
  * @author Jonathan + William
  */
 public class MainMenuView extends Menu {
-    private final static String menuItems = 
+    private final static String mainMenuItems = 
         "H     See Help Menu\n"+
         "N     Start New Game\n"+
         "Q     Quit Game";
     
 private MainMenuControl control = new MainMenuControl();
    public MainMenuView() {
-       super(MainMenuView.menuItems);
+       super(MainMenuView.mainMenuItems);
     }
         @Override
         public void displayMenu() {       
@@ -35,7 +35,7 @@ private MainMenuControl control = new MainMenuControl();
     public final void display() {
         System.out.println("\n\t*********************************************************");
         System.out.println("\tPlease choose what you would like to do:");
-        System.out.println(menuItems);
+        System.out.println(mainMenuItems);
         System.out.println("\t*********************************************************\n");
     }
 // retrieves the command entered by the end user

@@ -1,6 +1,5 @@
 package cit260.project1;
-
-/**
+/*
  * @author Jonathan + William
  */
 public class HelpMenuControl {

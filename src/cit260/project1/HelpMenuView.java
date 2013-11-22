@@ -1,10 +1,10 @@
 package cit260.project1;
 import java.util.Scanner;
-/**
+/*
  * @author Jonathan + William
  */
 public class HelpMenuView extends Menu {
-    private final static String menuItems = 
+    private final static String helpMenuItems = 
         "B     The board\n"+
         "G     The Connect Four game\n"+
         "M     Markers\n"+
@@ -13,7 +13,7 @@ public class HelpMenuView extends Menu {
     
     private HelpMenuControl control = new HelpMenuControl();
     public HelpMenuView() {
-        super(HelpMenuView.menuItems);
+        super(HelpMenuView.helpMenuItems);
     } 
     // display the help menu and get the end users input selection
     @Override
@@ -49,7 +49,7 @@ public class HelpMenuView extends Menu {
                 + "have questions about:");
 
      
-            System.out.println(menuItems);
+            System.out.println(helpMenuItems);
      
         System.out.println("\t*********************************************************\n");
     }
