@@ -5,12 +5,12 @@ import java.util.Scanner;
  */
 public class Game {
 public void doGame() {
-       Player player1 = new Player();
+       humanPlayer player1 = new humanPlayer();
        System.out.println("\nWe need to know who Player 1 is!");
        player1.getName();
        player1.marker = "X";
        System.out.println("\nNow for Player 2");
-       Player player2 = new Player();
+       humanPlayer player2 = new humanPlayer();
        player2.getName();
        player2.marker = "O";
        Board gameBoard = new Board();
@@ -112,17 +112,19 @@ public void doGame() {
         for (int i = 5; i >= 3; i--) {
             for (int j = 0; j < 7; j++) {
                 if ("_".equals(allMarkers[i][j])) {}
-                else if(j <= 3)  {
-                    if(allMarkers[i][j].equals(allMarkers[i-1][j+1]) && 
+                else {
+                    if(j <= 3)  {
+                        if(allMarkers[i][j].equals(allMarkers[i-1][j+1]) && 
                            allMarkers[i][j].equals(allMarkers[i-2][j+2]) &&
                             allMarkers[i][j].equals(allMarkers[i-3][j+3]))
-                        return true;
+                    return true;
                 }  
-                else if(j >= 3) {
-                    if(allMarkers[i][j].equals(allMarkers[i-1][j-1]) && 
-                           allMarkers[i][j].equals(allMarkers[i-2][j-2]) &&
-                            allMarkers[i][j].equals(allMarkers[i-3][j-3]))
+                    if(j >= 3) {
+                        if(allMarkers[i][j].equals(allMarkers[i-1][j-1]) && 
+                               allMarkers[i][j].equals(allMarkers[i-2][j-2]) &&
+                                allMarkers[i][j].equals(allMarkers[i-3][j-3]))
                         return true;
+                    }
                 }
             }
         }
