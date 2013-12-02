@@ -1,4 +1,7 @@
 package cit260.project1;
+
+import cit260.project1.menu.MainMenuView;
+
 /*
  * @authors William + Jonathan
  */
