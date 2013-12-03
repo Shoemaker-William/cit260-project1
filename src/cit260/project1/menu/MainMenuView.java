@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MainMenuView extends Menu {
     private final static String mainMenuItems = 
         "H     See Help Menu\n"+
-        "C     Continue playing"+
+        "C     Continue playing\n"+
         "N     Start New Game\n"+
         "Q     Quit Game";
     
@@ -52,7 +52,7 @@ private MainMenuControl control = new MainMenuControl();
         do {
             command = inFile.nextLine(); //gets input
             command = command.trim().toUpperCase(); //changes it to uppercase
-            if ("H".equals(command) || "N".equals(command) || "Q".equals(command))
+            if ("H".equals(command) || "N".equals(command) || "C".equals(command) || "Q".equals(command))
                 valid = true;
             else {
                 System.out.println("Invalid command. Please enter a valid command.");
