@@ -1,7 +1,6 @@
 package cit260.project1.menu;
 
 import cit260.project1.Game;
-import cit260.project1.HelpMenuView;
 
 /*
  * @author Jonathan + William

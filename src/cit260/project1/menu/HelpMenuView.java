@@ -1,5 +1,4 @@
-package cit260.project1;
-import cit260.project1.menu.Menu;
+package cit260.project1.menu;
 import java.util.Scanner;
 /*
  * @author Jonathan + William
@@ -82,6 +81,11 @@ public class HelpMenuView extends Menu {
 
     @Override
     public String getInput() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void displayError() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
      

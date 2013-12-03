@@ -11,7 +11,7 @@ package cit260.project1.menu;
 //don't know what you want to do, but this would be the most useful.
 
 
-public abstract class Menu implements DisplayInfo, EnterInfo {
+public abstract class Menu implements DisplayInfo, EnterInfo, DisplayError {
     public String menuItems = null;
     
     public Menu(){}

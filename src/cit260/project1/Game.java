@@ -1,4 +1,6 @@
 package cit260.project1;
+import cit260.project1.player.Player;
+import cit260.project1.player.humanPlayer;
 import java.util.Scanner;
 /*
  * @author Jonathan Davenport + William Shoemaker

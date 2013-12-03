@@ -1,4 +1,4 @@
-package cit260.project1;
+package cit260.project1.player;
 import java.util.Scanner;
 /*
  * @author Jonathan Davenport + William Shoemaker
@@ -7,8 +7,8 @@ public class Player {
       public String name;
       public String color;
       public String marker;
-      int score;
-      int wins;
+      public int score;
+      public int wins;
       int losses;
         
     public void getName() {

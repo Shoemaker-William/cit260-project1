@@ -1,4 +1,4 @@
-package cit260.project1;
+package cit260.project1.player;
 
 /*
  * @author dav09_000
