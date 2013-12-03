@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class MainMenuView extends Menu {
     private final static String mainMenuItems = 
         "H     See Help Menu\n"+
+        "C     Continue playing"+
         "N     Start New Game\n"+
         "Q     Quit Game";
     
@@ -26,7 +27,11 @@ private MainMenuControl control = new MainMenuControl();
                     break;
                 case "N":
                     control.startGame();
-                    break;                  
+                    break;
+ //So far this does not work yet, we need to make a different version of doGame that won't restart the score count
+                case "C":
+                    control.startGame();
+                    break;
             }
         } while(!"Q".equals(command));  
     }

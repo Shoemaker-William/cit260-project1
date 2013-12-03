@@ -6,7 +6,7 @@ public class HelpMenuControl {
     
     public HelpMenuControl() {
         
-    } 
+    }
 
     public void displayBoardHelp() {
         System.out.println();
