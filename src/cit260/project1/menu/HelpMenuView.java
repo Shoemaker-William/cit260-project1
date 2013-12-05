@@ -17,11 +17,11 @@ public class HelpMenuView extends Menu {
     } 
     // display the help menu and get the end users input selection
     @Override
-    public void displayMenu() {       
-        String command;
+    public void displayMenu() throws MenuExceptions {       
+        String command = null;
         do {
             this.display();
-            
+            try {
             // get command entered
             command = this.getCommand();
             switch (command) {
@@ -38,7 +38,10 @@ public class HelpMenuView extends Menu {
                     control.displayPlayerHelp();
                     break; 
             }
-        } while(!"Q".equals(command));  
+            } catch (MenuException be) {
+              Error.MenuException(be.getMessage());  
+            }
+        } while(!"Q".equals(command)); 
     }
 
         // displays the help menu
@@ -58,22 +61,24 @@ public class HelpMenuView extends Menu {
     
     // retrieves the command entered by the end user
     @Override
-    protected final String getCommand() {
+    protected final String getCommand() throws MenuException {
 
         Scanner inFile = new Scanner(System.in);
         String command;
         boolean valid = false;
         do {
-
-            command = inFile.nextLine(); //gets input
-            command = command.trim().toUpperCase(); //changes it to uppercase
-            if ("B".equals(command) || "G".equals(command) || "M".equals(command) 
+            
+           command = inFile.nextLine(); //gets input
+           command = command.trim().toUpperCase(); //changes it to uppercase
+           if ("B".equals(command) || "G".equals(command) || "M".equals(command) 
                     || "P".equals(command) || "Q".equals(command)) valid = true;
-            else {
+           else if(command==null){
+               throw new MenuException("Invalid command. Value cannot be null.");
+           }
+           else {
                 System.out.println("Invalid command. Please enter a valid command.");
                 continue;
-            }
-                
+           } 
         } while (!valid);
         
         return command;

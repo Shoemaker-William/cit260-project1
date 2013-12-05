@@ -15,7 +15,6 @@ public class MainMenuControl {
          }   
     public void startGame() {
             Game game = new Game();
-            game.doGame();
-            //Shouldn't this start the game? 
+            game.doGame(); 
          }
 }

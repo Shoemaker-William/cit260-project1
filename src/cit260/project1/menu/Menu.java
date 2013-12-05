@@ -23,6 +23,8 @@ public abstract class Menu implements DisplayInfo, EnterInfo, DisplayError {
     @Override
     public void display() {}
 
-    protected String getCommand() {return null;}
+    protected String getCommand() {
+        return null;
+    }
 
 }
