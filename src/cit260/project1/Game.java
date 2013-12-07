@@ -6,14 +6,17 @@ import java.util.Scanner;
  * @author Jonathan Davenport + William Shoemaker
  */
 public class Game {
-public void doGame() {
+public void doGame() throw GameException {
        humanPlayer player1 = new humanPlayer();
        System.out.println("\nWe need to know who Player 1 is!");
        player1.getName();
        player1.marker = "X";
        System.out.println("\nNow for Player 2");
        humanPlayer player2 = new humanPlayer();
+       try {
        player2.getName();
+       } catch (GameException player){
+       System.out.println("Cannot have the same name for Player 1 and Player 2");}
        player2.marker = "O";
        Board gameBoard = new Board();
        boolean win = false;
