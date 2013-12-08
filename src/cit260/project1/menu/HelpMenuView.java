@@ -1,4 +1,5 @@
 package cit260.project1.menu;
+import cit260.project1.exceptions.MenuException;
 import java.util.Scanner;
 /*
  * @author Jonathan + William
@@ -16,8 +17,13 @@ public class HelpMenuView extends Menu {
         super(HelpMenuView.helpMenuItems);
     } 
     // display the help menu and get the end users input selection
+
+    /**
+     *
+     * @throws MenuException
+     */
     @Override
-    public void displayMenu() throws MenuExceptions {       
+    public void displayMenu() throws MenuException {       
         String command = null;
         do {
             this.display();
@@ -92,7 +98,5 @@ public class HelpMenuView extends Menu {
     @Override
     public void displayError() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-     
-  
+    } 
 }

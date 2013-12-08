@@ -1,4 +1,5 @@
 package cit260.project1;
+import cit260.project1.exceptions.GameException;
 import cit260.project1.player.Player;
 import cit260.project1.player.humanPlayer;
 import java.util.Scanner;
@@ -6,7 +7,10 @@ import java.util.Scanner;
  * @author Jonathan Davenport + William Shoemaker
  */
 public class Game {
-public void doGame() throw GameException {
+    /*
+     *
+     */
+    public void doGame() {
        humanPlayer player1 = new humanPlayer();
        System.out.println("\nWe need to know who Player 1 is!");
        player1.getName();
@@ -15,7 +19,8 @@ public void doGame() throw GameException {
        humanPlayer player2 = new humanPlayer();
        try {
        player2.getName();
-       } catch (GameException player){
+       } 
+       catch (GameException player){
        System.out.println("Cannot have the same name for Player 1 and Player 2");}
        player2.marker = "O";
        Board gameBoard = new Board();

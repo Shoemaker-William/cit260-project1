@@ -1,12 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package cit260.project1.exceptions;
 
-/**
- *
- * @author Jonathan
+/*
+ * @author Jonathan + William
  */
 public class MenuException extends Exception {
     public MenuException(){
