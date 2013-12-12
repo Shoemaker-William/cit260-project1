@@ -23,11 +23,10 @@ public class HelpMenuView extends Menu {
      * @throws MenuException
      */
     @Override
-    public void displayMenu() throws MenuException {       
-        String command = null;
+    public void displayMenu() {       
+        String command;
         do {
             this.display();
-            try {
             // get command entered
             command = this.getCommand();
             switch (command) {
@@ -44,9 +43,7 @@ public class HelpMenuView extends Menu {
                     control.displayPlayerHelp();
                     break; 
             }
-            } catch (MenuException be) {
-              Error.MenuException(be.getMessage());  
-            }
+            
         } while(!"Q".equals(command)); 
     }
 
@@ -67,7 +64,7 @@ public class HelpMenuView extends Menu {
     
     // retrieves the command entered by the end user
     @Override
-    protected final String getCommand() throws MenuException {
+    protected final String getCommand() {
 
         Scanner inFile = new Scanner(System.in);
         String command;
@@ -78,9 +75,6 @@ public class HelpMenuView extends Menu {
            command = command.trim().toUpperCase(); //changes it to uppercase
            if ("B".equals(command) || "G".equals(command) || "M".equals(command) 
                     || "P".equals(command) || "Q".equals(command)) valid = true;
-           else if(command==null){
-               throw new MenuException("Invalid command. Value cannot be null.");
-           }
            else {
                 System.out.println("Invalid command. Please enter a valid command.");
                 continue;
