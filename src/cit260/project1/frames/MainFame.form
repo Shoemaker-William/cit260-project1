@@ -163,11 +163,17 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="New Game"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbNewGameActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jbContGame">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Contiue Game"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbContGameActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jbHelpMenu">
               <Properties>
@@ -181,6 +187,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Quit"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbQuitActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
