@@ -14,13 +14,13 @@ public class Cit260Project1 {
             + "player wins the game.";
      
     
-    JFrame MainFrame;
+    JFrame MainFrame = new JFrame();
     
-  
-     
-    public Cit260Project1() {
+   public Cit260Project1() {
        this.MainFrame = new JFrame("Connect Four");
     }
+     
+   
     
     
     boolean winner;
@@ -29,7 +29,10 @@ public class Cit260Project1 {
     //    myGame.displayHelp();
     //    MainMenuView menu = new MainMenuView();
     //    menu.displayMenu();
-   }
+   
+    
+    
+    }
     private void displayHelp() {
         System.out.println("\nWelcome to Connect Four!" + "\n");
         System.out.println(this.instructions);
