@@ -1,11 +1,5 @@
 package cit260.project1.frames;
 import cit260.project1.Game;
-import cit260.project1.Board;
-import cit260.project1.Cit260Project1;
-import cit260.project1.Status;
-import cit260.project1.menu.Menu;
-
-
 /*
  * @author William
  */
@@ -15,7 +9,9 @@ public class MainFame extends javax.swing.JFrame {
      * Creates new form MainFame
      */
     public MainFame() {
+        this.setVisible(true);
         initComponents();
+        this.setDefaultCloseOperation(MainFame.EXIT_ON_CLOSE);
     }
 
     /*
