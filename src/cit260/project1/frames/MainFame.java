@@ -1,4 +1,10 @@
 package cit260.project1.frames;
+import cit260.project1.Game;
+import cit260.project1.Board;
+import cit260.project1.Cit260Project1;
+import cit260.project1.Status;
+import cit260.project1.menu.Menu;
+
 
 /*
  * @author William
@@ -192,6 +198,8 @@ public class MainFame extends javax.swing.JFrame {
 
     private void jbHelpMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbHelpMenuActionPerformed
         // TODO add your handling code here:
+        //This will need to open a new pop up window or something to display menu information
+        
     }//GEN-LAST:event_jbHelpMenuActionPerformed
 
     private void jbQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbQuitActionPerformed
@@ -201,10 +209,12 @@ public class MainFame extends javax.swing.JFrame {
 
     private void jbNewGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbNewGameActionPerformed
         // TODO add your handling code here:
+                Game game = new Game();
     }//GEN-LAST:event_jbNewGameActionPerformed
 
     private void jbContGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbContGameActionPerformed
         // TODO add your handling code here:
+                Game game = new Game();
     }//GEN-LAST:event_jbContGameActionPerformed
 
     /*
@@ -236,6 +246,7 @@ public class MainFame extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new MainFame().setVisible(true);
             }

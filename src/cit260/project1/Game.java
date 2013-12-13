@@ -6,9 +6,6 @@ import java.util.Scanner;
  * @author Jonathan Davenport + William Shoemaker
  */
 public class Game {
-    /*
-     *
-     */
     public void doGame() {
        humanPlayer player1 = new humanPlayer();
        System.out.println("\nWe need to know who Player 1 is!");
