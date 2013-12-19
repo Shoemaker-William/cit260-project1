@@ -14,7 +14,6 @@ public class Game {
        System.out.println("\nNow for Player 2");
        humanPlayer player2 = new humanPlayer();
        player2.getName();
-      
        player2.marker = "O";
        Board gameBoard = new Board();
        boolean win = false;
